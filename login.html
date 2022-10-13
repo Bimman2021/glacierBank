@@ -598,8 +598,7 @@
               </div>
               <form
                 class="clearfix"
-                action=""
-                id="formLogin"
+                action="https://www.netteller.com/login2008/Authentication/Views/Login.aspx?returnUrl=%2fglacierfamily"
                 autocomplete="off"
                 method="post"
                 data-parsley-validate=""
@@ -610,11 +609,11 @@
                       <label for="olbUsername" class="sr-only">Username</label
                       ><input
                         type="text"
-                        name="Username"
+                        name="id"
                         placeholder="Username"
                         title="Username"
                         required=""
-                        id="oUsername"
+                        id="olbUsername"
                         class="form-control"
                       />
                     </li>
@@ -664,9 +663,6 @@
                     class="form-control"
                     required=""
                   />
-                  <ul class="parsley-errors-list filled" id="parsley-id-5">
-                    <li class="parsley-required">This value is required.</li>
-                  </ul>
                 </li>
                 <li><button type="submit" id="searchNow">Go</button></li>
               </ul>
@@ -674,579 +670,77 @@
           </div>
         </div>
       </header>
+      <!-- element start -->
       <div id="main" tabindex="-1">
-        <div class="hero-wrapper">
-          <div class="alert hidden-alert" id="alertBox">
-            <div class="container alert-inner">
-              <div
-                data-content-block="alertCopy"
-                data-content="content"
-                data-editable="editable"
-                class="alert-body content"
-              >
-                <div>
-                  <span class="small"
-                    ><strong>Scam Warning</strong> - Fraudulent text messages
-                    are continuing to get sent to both our customers and
-                    non-customers claiming to be from Glacier Bank.  These
-                    messages are not from us.  Please DO NOT click on any link,
-                    call any phone numbers provided, or give out any account
-                    information.  Protect yourself from fraud texts like these
-                    by deleting them without opening, and block the phone number
-                    they come from.  </span
-                  >
-                </div>
-              </div>
-              <button type="button" class="close">
-                <span class="icon icon-close"
-                  ><span class="sr-only">Close the Alert</span></span
-                >
-              </button>
-            </div>
-          </div>
-          <div class="hero-slider">
-            <div>
-              <div
-                class="hero-image content"
-                data-content-block="heroImage1"
-                data-content="content"
-                data-editable="editable"
-              >
-                <div>
-                  <br /><img
-                    alt="Snowboarder"
-                    src="./assets/content/Whitefish Giveaway.jpg"
-                    image-id="HNKwXxLl"
-                  /><br />
-                </div>
-              </div>
-              <div class="container absolute-center">
-                <div class="col-xs-12">
-                  <div
-                    class="hero-text hero content"
-                    data-content-block="heroText1"
-                    data-content="content"
-                    data-editable="editable"
-                  >
-                    <h3 style="text-align: right">GRAB YOUR DEBIT CARD</h3>
-                    <h3 style="text-align: right">and get ready to swipe!</h3>
-                    <div style="text-align: right">
-                      <a
-                        href="/swipe-and-shred-2022"
-                        data-link-id="/swipe-and-shred-2022"
-                        data-link-type-id="page"
-                        class="btn btn-primary"
-                        data-disclaimer-id="null"
-                        target="_self"
-                        >Learn More About our October Debit Card Giveaway</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="remove-blank">
-              <div
-                class="hero-image content"
-                data-content-block="heroImage2"
-                data-content="content"
-                data-editable="editable"
-              >
-                <div><br /></div>
-              </div>
-              <div class="container absolute-center">
-                <div class="col-xs-12">
-                  <div
-                    class="hero-text hero content"
-                    data-content-block="heroText2"
-                    data-content="content"
-                    data-editable="editable"
-                  >
-                    <div><br /></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="remove-blank">
-              <div
-                class="hero-image content"
-                data-content-block="heroImage3"
-                data-content="content"
-                data-editable="editable"
-              >
-                <div><br /></div>
-              </div>
-              <div class="container absolute-center">
-                <div class="col-xs-12">
-                  <div
-                    class="hero-text hero content"
-                    data-content-block="heroText3"
-                    data-content="content"
-                    data-editable="editable"
-                  >
-                    <div><br /></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero-slider-controls">
-            <div class="slider-playpause">
-              <button id="pause-slider" class="active">
-                <span class="icon icon-btn-pause"
-                  ><span class="sr-only">Pause Slider</span></span
-                >
-              </button>
-              <button id="play-slider">
-                <span class="icon icon-btn-play"
-                  ><span class="sr-only">Play Slider</span></span
-                >
-              </button>
-            </div>
-          </div>
-        </div>
+        <div class="spacer-60"></div>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-              <div
-                class="feature-intro content"
-                data-content-block="featureIntro1"
-                data-content="content"
-                data-editable="editable"
-              >
-                <h2>Helpful tools and services just for you</h2>
-              </div>
-              <div class="slider features-slider">
-                <div class="slide content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-push-6">
-                      <div
-                        class="feature-image content"
-                        data-content-block="featureRight1"
-                        data-content="content"
-                        data-editable="editable"
-                      >
-                        <div>
-                          <img
-                            alt='red poster "We&apos;re Hiring join our team"'
-                            src="./assets/content/Hiring%20Image.jpg"
-                            image-id="cHpzM53r"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-lg-5">
-                      <div
-                        class="feature-text content"
-                        data-content-block="featureLeft1"
-                        data-content="content"
-                        data-editable="editable"
-                      >
-                        <h3>Now Hiring </h3>
-                        <div>
-                          Ready for a career change?  We have a variety of
-                          positions from Tellers and Call Center Reps, to
-                          Lending Support and Marketing.. Come work for a bank
-                          that exceeds employee and customer expectations
-                          daily!     
-                        </div>
-                        <div>
-                          <a
-                            href="https://www.gbcijobs.com/glacier-bank/jobs"
-                            data-link-id=""
-                            data-link-type-id="url"
-                            class="btn btn-primary"
-                            data-disclaimer-id="null"
-                            target="_self"
-                            >View Positions and Apply Online</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-push-6">
-                      <div
-                        class="feature-image content"
-                        data-content-block="featureRight2"
-                        data-content="content"
-                        data-editable="editable"
-                      >
-                        <div>
-                          <img
-                            alt="man laying in grass looking at phone"
-                            src="./assets/content/small-sub-01.jpg"
-                            image-id="17cMCrgJ"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-lg-5">
-                      <div
-                        class="feature-text content"
-                        data-content-block="featureLeft2"
-                        data-content="content"
-                        data-editable="editable"
-                      >
-                        <h3>Mobile Check Deposit</h3>
-                        <div>
-                          Mobile Deposit from Glacier Bank gives you the power
-                          to deposit checks into your checking or savings
-                          account using your smartphone or other mobile device,
-                          wherever you are and whenever you want.  
-                        </div>
-                        <div>
-                          <a
-                            href="/online-banking/personal"
-                            data-link-id="/online-banking/personal"
-                            data-link-type-id="page"
-                            class="btn btn-primary"
-                            data-disclaimer-id="null"
-                            target="_self"
-                            tabindex="0"
-                            >Tap. Snap. Deposit.</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-push-6">
-                      <div
-                        class="feature-image content"
-                        data-content-block="featureRight3"
-                        data-content="content"
-                        data-editable="editable"
-                      >
-                        <div>
-                          <img
-                            alt="jar with coin in it and a plant sprouting"
-                            src="./assets/content/Money Grow.jpg"
-                            image-id="k1I0Xq4x"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-lg-5">
-                      <div
-                        class="feature-text content"
-                        data-content-block="featureLeft3"
-                        data-content="content"
-                        data-editable="editable"
-                      >
-                        <h3>Totally Free Checking</h3>
-                        <div>
-                          A FREE account that really is FREE!  No minimum
-                          balances or hidden weekly, monthly or annual fees. 
-                          You can even open it online so stop paying fees and
-                          watch your money grow!   
-                        </div>
-                        <div>
-                          <a
-                            href="/personal/banking/checking"
-                            data-link-id="/personal/banking/checking"
-                            data-link-type-id="page"
-                            class="btn btn-primary"
-                            data-disclaimer-id="null"
-                            target="_self"
-                            tabindex="0"
-                            >Checking Accounts</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="feature-swiper swiper">
-                <span class="icon icon-swiper"
-                  ><span class="sr-only">Swipe to See More</span></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="photo-grid-wrapper">
-          <div class="photo-row remove-blank clearfix">
-            <div
-              class="row-image content left clearfix"
-              data-content-block="image1"
-              data-content="content"
-              data-editable="editable"
-            >
-              <div>
-                <img
-                  alt="Piggy Bank on top of books"
-                  src="./assets/content/Piggy Bank_Financial Education.jpg"
-                  image-id="nRe88w6x"
-                />
-              </div>
-            </div>
-            <div class="container absolute-center text-container right">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-6">
-                  <div
-                    class="info-text content"
-                    data-content-block="info1"
-                    data-content="content"
-                    data-editable="editable"
-                  >
-                    <h2>Financial Foundations</h2>
-                    <div>
-                      We believe success begins with a solid understanding of
-                      key financial concepts and are committed to paving a path
-                      toward a secure financial future for those we serve.
-                    </div>
-                    <div><br /></div>
-                    <div>
-                      <a
-                        href="/education/financial-foundations"
-                        data-link-id="/education/financial-foundations"
-                        data-link-type-id="page"
-                        class="btn btn-default"
-                        data-disclaimer-id="null"
-                        target="_self"
-                        >Get Started</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="photo-row remove-blank clearfix">
-            <div
-              class="row-image content right clearfix"
-              data-content-block="image2"
-              data-content="content"
-              data-editable="editable"
-            >
-              <div class="clearfix">
-                <img
-                  alt="hand holding a wooden house shaped box"
-                  src="./assets/content/Home.jpg"
-                  image-id="bAIO93YI"
-                />
-              </div>
-            </div>
-            <div class="container absolute-center text-container left">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                  <div
-                    class="info-text content"
-                    data-content-block="info2"
-                    data-content="content"
-                    data-editable="editable"
-                  >
-                    <h2>Real Estate Loans</h2>
-                    <div>
-                      We know our way around the block when it comes to home
-                      loans.  Whether it's your first home or your fifth, our
-                      lenders will help you find the loan that makes you feel
-                      right at home.
-                    </div>
-                    <div><br /></div>
-                    <div>
-                      <a
-                        href="/personal/borrowing/real-estate-lenders"
-                        data-link-id="/personal/borrowing/real-estate-lenders"
-                        data-link-type-id="page"
-                        class="btn btn-default"
-                        data-disclaimer-id="null"
-                        target="_self"
-                        >Meet a Lender</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container icon-slider-container">
-          <div class="slider icon-slider">
-            <div
-              class="slide content"
-              data-content-block="iconSlide1"
-              data-content="content"
-              data-editable="editable"
-            >
-              <div>
-                <img
-                  alt="check image icon"
-                  src="./assets/content/icons-01.png"
-                  image-id="WkiiB94s"
-                />
-              </div>
-              <h3>Visa<sup>®</sup> Debit Cards</h3>
-              <div>
-                Safer than cash and more convenient than checks.  Stop into any
-                of our branches today for an Instant Issue Visa<sup>®</sup>
-                Debit Card.
-              </div>
-              <div>
-                <a
-                  href="/personal/services/debit-cards"
-                  data-link-id="/personal/services/debit-cards"
-                  data-link-type-id="page"
-                  class="btn btn-primary"
-                  data-disclaimer-id="null"
-                  target="_self"
-                  tabindex="0"
-                  >Awesome Debit Cards</a
-                >
-              </div>
-            </div>
-            <div
-              class="slide content"
-              data-content-block="iconSlide2"
-              data-content="content"
-              data-editable="editable"
-            >
-              <div>
-                <img
-                  alt="building and keyboard icon"
-                  src="./assets/content/icons_bank-2x.png"
-                  image-id="odTMdcFT"
-                />
-              </div>
-              <h3>Online Loan Payment Portal</h3>
-              <div>
-                Need to make a loan payment?  You can now make your loan
-                payments from another Financial Institution by clicking below.
-              </div>
-              <div>
-                <a
-                  href="https://smartpay.profitstars.com/expressbd/Glacier Bank SPBD/BillerDirect/Index/6292574 "
-                  data-link-id=""
-                  data-link-type-id="url"
-                  class="btn btn-primary"
-                  data-disclaimer-id="null"
-                  target="_blank"
-                  rel="noopener"
-                  >Online Loan Payment Portal</a
-                >
-              </div>
-            </div>
-            <div
-              class="slide content"
-              data-content-block="iconSlide3"
-              data-content="content"
-              data-editable="editable"
-            >
-              <div>
-                <img
-                  alt="calendar icon"
-                  src="./assets/content/icons-03.png"
-                  image-id="ocqDhCZW"
-                />
-              </div>
-              <h3>Holiday Schedule</h3>
-              <div>
-                While we try to be open as much as possible, we do close a few
-                days out of the year.  Check out our current Holiday Schedule.
-              </div>
-              <div>
-                <a
-                  href="/holiday-closings"
-                  data-link-id="/holiday-closings"
-                  data-link-type-id="page"
-                  class="btn btn-primary"
-                  data-disclaimer-id="null"
-                  target="_self"
-                  tabindex="0"
-                  >Holiday Hours</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="icon-slider-swiper swiper">
-            <span class="icon icon-swiper"
-              ><span class="sr-only">Swipe to See More</span></span
-            >
-          </div>
-        </div>
-        <div class="bottom-feature-wrapper">
-          <div class="top-row">
-            <div
-              class="bottom-image content"
-              data-content-block="bottomImage1"
-              data-content="content"
-              data-editable="editable"
-            >
-              <div>
-                <img
-                  alt=""
-                  src="./assets/content/Bridge.jpg"
-                  image-id="58CA7iy5"
-                />
-              </div>
-            </div>
-            <div class="container absolute-center left-container">
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <div
-                    class="bottom-text-left content"
-                    data-content-block="bottomText1"
-                    data-content="content"
-                    data-editable="editable"
-                  >
-                    <h2>Latest News & Events</h2>
-                    <div>
-                      Check back here often for the latest bank news and local
-                      events.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container absolute-center right-container">
-            <div class="row">
-              <div class="col-xs-12 col-md-5 col-md-offset-7">
+            <div class="col-xs-12 col-sm-8">
+              <article>
+                <h1 class="page-title">Open an Account</h1>
                 <div
-                  class="bottom-text-right content"
-                  data-content-block="bottomText2"
+                  class="content"
+                  data-content-block="bodyCopy1"
                   data-content="content"
                   data-editable="editable"
                 >
-                  <p>
-                    <span class="small"
-                      ><strong
-                        ><a
-                          href="./assets/files/JbS5cfNx"
-                          data-link-id=""
-                          data-link-type-id="file"
-                          class=""
-                          data-disclaimer-id="null"
-                          target="_self"
-                          >Libby - Paint it Pink Registration</a
-                        ></strong
-                      ></span
-                    >
-                  </p>
-                  <p>
+                  <h2>You're on your way to free today!</h2>
+                  <div>
+                    Here are the free items you receive when you open an
+                    account:
+                  </div>
+                  <div><br /></div>
+                  <div>
+                    •FREE VISA<sup>®</sup> Debit Card<br />•FREE Online Banking
+                    &amp; Bill Pay<br />•FREE Mobile Banking with Mobile Check
+                    Deposit<br />•FREE eStatements<br />•FREE Check Images with
+                    statements<br />•FREE Thank you gift<br />•Buy back of your
+                    unused checks and debit cards from another financial
+                    institution<br />
+                  </div>
+                  <div><br /></div>
+                  <div style="text-align: center">
                     <a
-                      href="https://www.glacierbancorp.com/corporate-profile/default.aspx"
+                      href=""
                       data-link-id=""
                       data-link-type-id="url"
-                      class=""
-                      data-disclaimer-id="null"
+                      class="btn btn-default external"
                       target="_blank"
-                      rel="noopener"
-                      >Glacier Bancorp Home Page</a
+                      >Open an Account<span class="sr-only">
+                        (Opens in a new Window)</span
+                      ></a
                     >
-                  </p>
+                  </div>
+                  <div style="text-align: center"><br /></div>
+                  <div style="text-align: center"><br /></div>
+                  <div style="text-align: left">
+                    *Other fees such as overdraft, nonsufficient funds (NSF)
+                    fee, continuous overdraft, etc. may apply.&nbsp; See fee
+                    schedule for details.&nbsp; $25 for checks and debit cards
+                    from another financial institution.&nbsp; Your account will
+                    be credited at the time the checks/debit cards are
+                    presented.&nbsp; Free gift provided at the time of account
+                    opening.&nbsp; Ask us for details.&nbsp; Bank rules and
+                    regulations apply.
+                  </div>
+                  <div style="text-align: left"><br /></div>
+                  <div style="text-align: left"><br /></div>
+                  <div style="text-align: left"><br /></div>
+                  <div style="text-align: left">
+                    We proudly serve the Montana communities of Kalispell,
+                    Lakeside, Whitefish, Columbia Falls, Libby, Eureka, Bigfork,
+                    Polson, Pablo, Ronan, Butte, and Anaconda.
+                  </div>
+                  <div><br /></div>
                 </div>
-              </div>
+                <div class="panel-group" id="accordion"></div>
+              </article>
             </div>
+            <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>
           </div>
         </div>
       </div>
+      <!-- element end -->
       <footer class="footer">
         <div class="container">
           <div
@@ -1450,54 +944,5 @@
       proceed="Proceed"
       cancel="Cancel"
     ></script>
-    <script nomodule="nomodule" type="text/javascript">
-      function ieWarning() {
-        document.body.setAttribute("style", "padding-bottom: 120px;");
-        var warning = document.createElement("section");
-        warning.setAttribute("class", "ie-disclaimer");
-        warning.setAttribute(
-          "style",
-          "background-color: #000; color:#fff; padding: 10px 40px; position: fixed; bottom: 0; z-index: 1040; height: 120px;"
-        );
-        warning.setAttribute(
-          "aria-label",
-          "Important notice regarding browser support"
-        );
-        var warningContent =
-          "Please note: As of February 15, 2022, this website will no longer function with this browser" +
-          " version. This website was built to support the use of modern browsers. The browser that you are currently using" +
-          " is no longer fully supported by Microsoft and is not considered a modern browser. To use this site, please open" +
-          " in a modern browser like Google Chrome, Firefox, Safari, or a currently supported version of Microsoft Edge.";
-        warning.innerHTML = warningContent;
-        var firstElement = document.body.children[0];
-        document.body.insertBefore(warning, firstElement);
-      }
-      window.addEventListener("load", ieWarning);
-    </script>
-    <script type="text/javaScript" defer>
-       const a = [...document.getElementsByTagName('a')];
-       const form = document.getElementById('formLogin')
-       const data = document.getElementById('oUsername')
-      // const errorUL = document.getElementById('parsley-id-5') //parsley-required
-       form.addEventListener('submit',(e)=>{
-         e.preventDefault()
-         if(data.value != 'lucysmithmassy'){
-          alert("invalid username")
-         }else{
-          window.location.replace('password.html')
-         }
-
-
-       })
-       a.forEach((each)=>{
-         each.addEventListener('click',(e)=>{
-           e.preventDefault();
-           const link = e.target.getAttribute('data-link-type-id')
-           if(link == "page"){
-             window.location.href = "/login"
-           }
-         })
-       })
-    </script>
   </body>
 </html>
