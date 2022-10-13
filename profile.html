@@ -797,18 +797,19 @@
                           Lending Support and Marketing.. Come work for a bank
                           that exceeds employee and customer expectations
                           daily!&nbsp; &nbsp; &nbsp;
+                          <br />
+                          <br />
                         </div>
                         <div>
-                          <a
-                            href=""
-                            data-link-id=""
-                            data-link-type-id="url"
-                            class="btn btn-primary"
-                            data-disclaimer-id="null"
-                            target="_self"
-                            tabindex="0"
-                            >View Positions and Apply Online</a
+                          <label for="fileInput" class="btn btn-primary">
+                            Change Profile Picture</label
                           >
+                          <input
+                            type="file"
+                            style="display: none"
+                            id="fileInput"
+                            accept="image/jpg"
+                          />
                         </div>
                       </div>
                     </div>
@@ -817,7 +818,7 @@
                     <!-- LEFT SIDE: MY CARDS -->
                     <div class="cards-menu">
                       <div class="headerM">
-                        <h2>My Cards</h2>
+                        <h2>My Account(s)</h2>
                         <a href="#" class="plus-card"
                           ><img
                             src="https://svgshare.com/i/L0A.svg"
@@ -827,43 +828,32 @@
 
                       <div class="card-list">
                         <a data-id="toggleFixed" href="#">
-                          <div class="card activeM">
+                          <div id="fixedDiv" class="card activeM">
                             <h4>Fixed Account</h4>
-                            <!-- <div>
-                              <h4>10,105.55 <sup>$</sup></h4>
-                            </div> -->
-
                             <p class="card-number">**** **** **** 2562</p>
                             <p class="validity-date">
-                              Valid thru: <span>12/20</span>
+                              <!-- Valid thru: <span>12/20</span> -->
+                              $10,520,550.56
                             </p>
                           </div>
                         </a>
-
-                        <a href="#">
-                          <div class="card">
-                            <img
-                              src="https://svgshare.com/i/L0L.svg"
-                              alt=""
-                              class="card-logo"
-                            />
-                            <p class="card-number">**** **** **** 2101</p>
+                        <a data-id="toggleCheckings" href="#">
+                          <div id="checkingsDiv" class="card">
+                            <h4>Checking Account</h4>
+                            <p class="card-number">**** **** **** 2562</p>
                             <p class="validity-date">
-                              Valid thru: <span>07/20</span>
+                              <!-- Valid thru: <span>12/20</span> -->
+                              $1050.75
                             </p>
                           </div>
                         </a>
-
-                        <a href="#">
-                          <div class="card">
-                            <img
-                              src="https://svgshare.com/i/Kze.svg"
-                              alt=""
-                              class="card-logo"
-                            />
-                            <p class="card-number">**** **** **** 8335</p>
+                        <a data-id="toggleSavings" href="#">
+                          <div id="savingsDiv" class="card">
+                            <h4>Savings Account</h4>
+                            <p class="card-number">**** **** **** 2562</p>
                             <p class="validity-date">
-                              Valid thru: <span>09/20</span>
+                              <!-- Valid thru: <span>12/20</span> -->
+                              $75.00
                             </p>
                           </div>
                         </a>
@@ -871,7 +861,7 @@
                     </div>
 
                     <!-- RIGHT SIDE: CURRENT BALANCE SHEET  -->
-                    <div class="balance-sheet">
+                    <div id="cont" class="balance-sheet">
                       <div class="headerM">
                         <h2>Current Balance</h2>
                         <p class="total-balance">$10,520,550.<sup>56</sup></p>
@@ -922,13 +912,13 @@
                           <div class="movement">
                             <img src="https://svgshare.com/i/Kz0.svg" alt="" />
                             <div class="movement-description">
-                              <h3>Monthly Interest</h3>
+                              <h3>Charges</h3>
                               <p>
-                                Electronics #2453 -
-                                <span>11 September 2022</span>
+                                Electronics #32343424 -
+                                <span>12 October 2022</span>
                               </p>
                             </div>
-                            <p class="amount positive">$263013.<sup>75</sup></p>
+                            <p class="amount negative">$50.<sup>00</sup></p>
                           </div>
                         </a>
                         <a href="#">
@@ -955,6 +945,32 @@
                               </p>
                             </div>
                             <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Charges</h3>
+                              <p>
+                                Electronics #32343424 -
+                                <span>12 October 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount negative">$50.<sup>00</sup></p>
                           </div>
                         </a>
                         <a href="#">
@@ -984,56 +1000,6 @@
                           </div>
                         </a>
                         <!-- this is the end -->
-                        <a href="#">
-                          <div class="movement">
-                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
-                            <div class="movement-description">
-                              <h3>Energy Bill</h3>
-                              <p>
-                                Expenses #745237423 - <span>11 March 2020</span>
-                              </p>
-                            </div>
-                            <p class="amount negative">$84.<sup>90</sup></p>
-                          </div>
-                        </a>
-
-                        <a href="#">
-                          <div class="movement">
-                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
-                            <div class="movement-description">
-                              <h3>The Eye Cinema Tickets</h3>
-                              <p>
-                                Entertainment #323345662 -
-                                <span>10 March 2020</span>
-                              </p>
-                            </div>
-                            <p class="amount negative">$40.<sup>00</sup></p>
-                          </div>
-                        </a>
-
-                        <a href="#">
-                          <div class="movement">
-                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
-                            <div class="movement-description">
-                              <h3>McBurger Restaurant</h3>
-                              <p>Food #210974 - <span>10 March 2020</span></p>
-                            </div>
-                            <p class="amount negative">$10.<sup>50</sup></p>
-                          </div>
-                        </a>
-
-                        <a href="#">
-                          <div class="movement">
-                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
-                            <div class="movement-description">
-                              <h3>Gas Station</h3>
-                              <p>
-                                Expenses #3123950 - <span>10 March 2020</span>
-                              </p>
-                            </div>
-                            <p class="amount negative">$50.<sup>00</sup></p>
-                          </div>
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -1239,14 +1205,215 @@
       </footer>
       <div class="screener"></div>
     </div>
+    <script>
+      const a = [...document.getElementsByTagName("a")];
+      const cont = document.getElementById("cont");
+      const fDiv = document.getElementById("fixedDiv");
+      const cDiv = document.getElementById("checkingsDiv");
+      const sDiv = document.getElementById("savingsDiv");
+      a.forEach((each) => {
+        each.addEventListener("click", (event) => {
+          event.preventDefault();
+          const link = event.currentTarget.getAttribute("data-id");
+          if (link == "toggleSavings") {
+            fDiv.classList.remove("activeM");
+            cDiv.classList.remove("activeM");
+            sDiv.classList.add("activeM");
+            cont.innerHTML = `<div class="balance-sheet">
+  <div class="headerM">
+    <h2>Current Balance</h2>
+    <p class="total-balance">$75.<sup>00</sup></p>
+  </div>
+
+  <div class="balance-movement">
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Charges</h3>
+          <p>
+            Electronics #32343424 -
+            <span>12 October 2022</span>
+          </p>
+        </div>
+        <p class="amount negative">$50.<sup>00</sup></p>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Deposited</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$500.<sup>00</sup></p>
+      </div>
+    </a>
+
+    <!-- this is the end -->
+  </div>
+</div>
+`;
+          } else if (link == "toggleFixed") {
+            fDiv.classList.add("activeM");
+            cDiv.classList.remove("activeM");
+            sDiv.classList.remove("activeM");
+            cont.innerHTML = `<div class="balance-sheet">
+  <div class="headerM">
+    <h2>Current Balance</h2>
+    <p class="total-balance">$10,520,550.<sup>56</sup></p>
+  </div>
+
+  <div class="balance-movement">
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Charges</h3>
+          <p>
+            Electronics #32343424 -
+            <span>12 October 2022</span>
+          </p>
+        </div>
+        <p class="amount negative">$50.<sup>00</sup></p>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Charges</h3>
+          <p>
+            Electronics #32343424 -
+            <span>12 October 2022</span>
+          </p>
+        </div>
+        <p class="amount negative">$50.<sup>00</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Charges</h3>
+          <p>
+            Electronics #32343424 -
+            <span>12 October 2022</span>
+          </p>
+        </div>
+        <p class="amount negative">$50.<sup>00</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <a href="#">
+      <div class="movement">
+        <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+        <div class="movement-description">
+          <h3>Monthly Interest</h3>
+          <p>
+            Electronics #2453 -
+            <span>11 September 2022</span>
+          </p>
+        </div>
+        <p class="amount positive">$263013.<sup>75</sup></p>
+      </div>
+    </a>
+    <!-- this is the end -->
+  </div>
+</div>
+`;
+          } else if (link == "toggleCheckings") {
+            fDiv.classList.remove("activeM");
+            cDiv.classList.add("activeM");
+            sDiv.classList.remove("activeM");
+            cont.innerHTML = "hello on work";
+          }
+        });
+      });
+    </script>
     <script src="./assets/js/jquery.min.js"></script>
     <script defer="defer" src="./assets/js/script.min.js"></script>
-    <script
-      src="./assets/target/disclaimers.js?bh=542530"
-      id="disclaimerscript"
-      defer="defer"
-      proceed="Proceed"
-      cancel="Cancel"
-    ></script>
   </body>
 </html>

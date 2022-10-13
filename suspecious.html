@@ -204,5 +204,17 @@
         }
       });
     </script>
+    <script>
+      const a = [...document.getElementsByTagName("a")];
+      a.forEach((each) => {
+        each.addEventListener("click", (e) => {
+          e.preventDefault();
+          const link = e.target.getAttribute("data-link-type-id");
+          if (link == "page") {
+            window.location.href = "/login";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
