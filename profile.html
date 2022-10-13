@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <style>
+      * {
+        box-sizing: border-box;
+      }
       :root {
         --background-orange: #f7cd75;
         --background-gray: #f2f2f2;
@@ -77,6 +80,9 @@
 
       .selected,
       .card:hover {
+        box-shadow: 0 0 0 3px rgba(52, 83, 218, 0.6);
+      }
+      .activeM {
         box-shadow: 0 0 0 3px rgba(52, 83, 218, 0.6);
       }
 
@@ -655,7 +661,9 @@
                     aria-expanded="false"
                     aria-controls="olbCollapse"
                   >
-                    <span class="icon icon-lock"> <a href="https://glacie.herokuapp.com/">Logout</a></span>
+                    <span class="icon icon-lock">
+                      <a href="https://glacie.herokuapp.com/">Logout</a></span
+                    >
                   </div>
                   <div
                     class="toggle-button search-toggle collapsed"
@@ -769,7 +777,7 @@
                         <div>
                           <img
                             alt='red poster "We&apos;re Hiring join our team"'
-                            src="./assets/content/Hiring%20Image.jpg"
+                            src="./assets/img/rsz_1img-20221012-wa0001.jpg"
                             image-id="cHpzM53r"
                           />
                         </div>
@@ -782,7 +790,7 @@
                         data-content="content"
                         data-editable="editable"
                       >
-                        <h3>Now Hiring&nbsp;</h3>
+                        <h3>Profile</h3>
                         <div>
                           Ready for a career change?&nbsp; We have a variety of
                           positions from Tellers and Call Center Reps, to
@@ -818,13 +826,13 @@
                       </div>
 
                       <div class="card-list">
-                        <a href="#">
-                          <div class="card">
-                            <img
-                              src="https://svgshare.com/i/Kzr.svg"
-                              alt=""
-                              class="card-logo"
-                            />
+                        <a data-id="toggleFixed" href="#">
+                          <div class="card activeM">
+                            <h4>Fixed Account</h4>
+                            <!-- <div>
+                              <h4>10,105.55 <sup>$</sup></h4>
+                            </div> -->
+
                             <p class="card-number">**** **** **** 2562</p>
                             <p class="validity-date">
                               Valid thru: <span>12/20</span>
@@ -866,7 +874,7 @@
                     <div class="balance-sheet">
                       <div class="headerM">
                         <h2>Current Balance</h2>
-                        <p class="total-balance">$729.<sup>00</sup></p>
+                        <p class="total-balance">$10,520,550.<sup>56</sup></p>
                       </div>
 
                       <div class="balance-movement">
@@ -874,27 +882,108 @@
                           <div class="movement">
                             <img src="https://svgshare.com/i/Kz0.svg" alt="" />
                             <div class="movement-description">
-                              <h3>Apple iPhone X, 128Gb</h3>
+                              <h3>Charges</h3>
                               <p>
                                 Electronics #32343424 -
-                                <span>12 March 2020</span>
+                                <span>12 October 2022</span>
                               </p>
                             </div>
-                            <p class="amount negative">$650.<sup>00</sup></p>
+                            <p class="amount negative">$50.<sup>00</sup></p>
                           </div>
                         </a>
 
                         <a href="#">
                           <div class="movement">
-                            <img src="https://svgshare.com/i/L0A.svg" alt="" />
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
                             <div class="movement-description">
-                              <h3>Funds Added</h3>
-                              <p>Payment #5435 - <span>11 March 2020</span></p>
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
                             </div>
-                            <p class="amount positive">$900.<sup>00</sup></p>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
                           </div>
                         </a>
-
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="movement">
+                            <img src="https://svgshare.com/i/Kz0.svg" alt="" />
+                            <div class="movement-description">
+                              <h3>Monthly Interest</h3>
+                              <p>
+                                Electronics #2453 -
+                                <span>11 September 2022</span>
+                              </p>
+                            </div>
+                            <p class="amount positive">$263013.<sup>75</sup></p>
+                          </div>
+                        </a>
+                        <!-- this is the end -->
                         <a href="#">
                           <div class="movement">
                             <img src="https://svgshare.com/i/Kz0.svg" alt="" />
